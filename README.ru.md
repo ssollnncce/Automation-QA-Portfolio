@@ -75,7 +75,7 @@ pytest -m mobile -v    # только mobile-тесты (требует запу
 
 ## Статус
 
-- [x] Каркас проекта, venv, pytest.ini, conftest.py
+- [ ] Каркас проекта, venv, pytest.ini, conftest.py
 - [ ] Тест-дизайн и тест-кейсы: Auth
 - [ ] Тест-дизайн и тест-кейсы: Transfers
 - [ ] Тест-дизайн и тест-кейсы: Payments
@@ -85,7 +85,3 @@ pytest -m mobile -v    # только mobile-тесты (требует запу
 - [ ] Найденные баги задокументированы
 - [ ] CI (GitHub Actions)
 - [ ] Allure-отчёт
-
-## Автор
-
-Bulat — фронтенд-разработчик, в процессе перехода в QA/AQA.
