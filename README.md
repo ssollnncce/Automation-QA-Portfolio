@@ -75,7 +75,7 @@ Before any test is automated, each feature is analyzed manually: user scenarios 
 
 ## Status
 
-- [x] Project scaffolding, venv, pytest.ini, conftest.py
+- [ ] Project scaffolding, venv, pytest.ini, conftest.py
 - [ ] Test design & test cases: Auth
 - [ ] Test design & test cases: Transfers
 - [ ] Test design & test cases: Payments
@@ -85,7 +85,3 @@ Before any test is automated, each feature is analyzed manually: user scenarios 
 - [ ] Bugs found are documented
 - [ ] CI (GitHub Actions)
 - [ ] Allure report
-
-## Author
-
-Bulat — frontend developer transitioning into QA/AQA.
