@@ -51,7 +51,7 @@ qa-portfolio/
 
 ## How to Run
 
-\`\`\`bash
+```bash
 # 1. Clone the repository and enter the project folder
 git clone https://github.com/<username>/qa-portfolio.git
 cd qa-portfolio
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 pytest -m api -v       # API tests only
 pytest -m ui -v        # UI tests only
 pytest -m mobile -v    # mobile tests only (requires a running Appium Server + emulator)
-\`\`\`
+```
 
 ## Test Design Approach
 
