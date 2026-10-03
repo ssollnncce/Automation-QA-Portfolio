@@ -38,9 +38,9 @@ qa-portfolio/
 │       └── payments.md
 ├── bug-reports/              # bugs found: repro steps, expected/actual, logs
 ├── tests/
-│   ├── api/
+│   ├── api/                  # planned
 │   ├── ui/
-│   └── mobile/
+│   └── mobile/               # planned
 ├── pages/                    # Page Object classes (UI and mobile)
 ├── api_clients/               # HTTP request wrapper classes
 ├── conftest.py                # pytest fixtures
@@ -53,8 +53,8 @@ qa-portfolio/
 
 ```bash
 # 1. Clone the repository and enter the project folder
-git clone https://github.com/<username>/qa-portfolio.git
-cd qa-portfolio
+git clone https://github.com/ssolnncce/automation-qa-portfolio.git
+cd automation-qa-portfolio
 
 # 2. Create and activate a virtual environment
 python -m venv venv
