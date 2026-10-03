@@ -38,9 +38,9 @@ qa-portfolio/
 │       └── payments.md
 ├── bug-reports/              # найденные баги: repro steps, expected/actual, логи
 ├── tests/
-│   ├── api/
+│   ├── api/                  # planned
 │   ├── ui/
-│   └── mobile/
+│   └── mobile/               # planned
 ├── pages/                    # Page Object классы (UI и mobile)
 ├── api_clients/               # обёртки над HTTP-запросами
 ├── conftest.py                # фикстуры pytest
@@ -53,8 +53,8 @@ qa-portfolio/
 
 ```bash
 # 1. Клонировать репозиторий и перейти в папку проекта
-git clone https://github.com/<username>/qa-portfolio.git
-cd qa-portfolio
+git clone https://github.com/ssollnncce/automation-qa-portfolio.git
+cd automation-qa-portfolio
 
 # 2. Создать и активировать виртуальное окружение
 python -m venv venv
