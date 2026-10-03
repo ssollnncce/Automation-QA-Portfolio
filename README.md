@@ -75,8 +75,8 @@ Before any test is automated, each feature is analyzed manually: user scenarios 
 
 ## Status
 
-- [ ] Project scaffolding, venv, pytest.ini, conftest.py
-- [ ] Test design & test cases: Auth
+- [x] Project scaffolding, venv, pytest.ini, conftest.py
+- [x] Test design & test cases: Auth
 - [ ] Test design & test cases: Transfers
 - [ ] Test design & test cases: Payments
 - [ ] API automation (ParaBank)

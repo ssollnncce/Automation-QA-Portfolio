@@ -9,7 +9,7 @@ Note: ParaBank resets its database daily — test data (especially usernames) mu
 - The Phone and SSN fields do not validate input format — arbitrary letters/characters are accepted.
 - The Username field has no upper length limit (a 100+ character value was accepted).
 
-These points are candidates for a bug report (see `bug-reports/`), not just "quirks".
+These points are candidates for a bug report (see `bug-reports/`), not just "quirks"
 
 ---
 
@@ -24,6 +24,7 @@ These points are candidates for a bug report (see `bug-reports/`), not just "qui
 | TC_AUTH-REG-05 | Low (bug candidate) | Registration with letters in the Phone field | — | 1. Set Phone = "abcde" 2. Fill in the rest of the fields validly 3. Click Register | **Actual:** registration succeeds — no format validation. Expected: a format error |
 | TC_AUTH-REG-06 | Low (bug candidate) | Registration with letters in the SSN field | — | Same as AUTH-REG-05, for SSN | **Actual:** accepted without an error |
 | TC_AUTH-REG-07 | Low (bug candidate) | Registration with an extremely long Username (100+ chars) | — | 1. Set a Username 100+ characters long 2. Fill in the rest of the fields 3. Click Register | **Actual:** accepted without an error — no upper limit exists |
+| TC_AUTH-REG-08 | High (bug candidate) | Registration with a SSN that already exists | A user with SSN `X` already exists | 1. Fill in the form with SSN = `X` 2. Click Register | Registration should be blocked, and a validation error should be shown next to the SSN field. <br> **Actual:** Registration completes successfully with no error. The user is redirected to the login/welcome page, with no indication that the SSN was already in use by another account. |
 
 ## Login
 
@@ -32,10 +33,11 @@ Decision table (Username × Password combinations):
 | ID | Priority | Username | Password | Expected Result |
 |---|---|---|---|---|
 | TC_AUTH-LOGIN-01 | High | Valid (exists) | Valid (correct) | Successful login, redirect to Account Overview |
-| TC_AUTH-LOGIN-02 | High | Valid (exists) | Invalid (wrong) | Error: "The username and password could not be verified" |
-| TC_AUTH-LOGIN-03 | High | Invalid (doesn't exist) | Any | Same error as AUTH-LOGIN-02 — the message must not differ (information disclosure check) |
+| TC_AUTH-LOGIN-02 | High | Valid (exists) | Invalid (wrong) | Confirmed — correctly rejected |
+| TC_AUTH-LOGIN-03 | High | Invalid (doesn't exist) | Any | Confirmed — correctly rejected |
 | TC_AUTH-LOGIN-04 | Medium | Empty | Any | "Required field" error |
 | TC_AUTH-LOGIN-05 | Medium | Any | Empty | "Required field" error |
+| TC_AUTH_LOGIN-06 | High | Empty | Empty | "Required field@ error |
 
 ---
 
